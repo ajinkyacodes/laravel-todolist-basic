@@ -21,18 +21,16 @@
 
 <table class="table table-bordered">
     <tr>
-        <th width="5%" class="text-center" >No</th>
+        <th width="5%" class="text-center">No</th>
         <th>Task</th>     
-        <th width="250px">Action</th>
+        <th width="200px" class="text-center">Action</th>
     </tr>
     @foreach ($todos as $todo)
     <tr>
         <td class="text-center">{{ ++$i }}</td>
         <td>{{ $todo->task }}</td>
-        <td>
+        <td class="text-center">
             <form action="{{ route('todos.destroy',$todo->id) }}" method="POST">
-
-                <a class="btn btn-info" href="{{ route('todos.show',$todo->id) }}">Show</a>
 
                 <a class="btn btn-primary" href="{{ route('todos.edit',$todo->id) }}">Edit</a>
 

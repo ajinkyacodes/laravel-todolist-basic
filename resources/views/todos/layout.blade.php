@@ -13,7 +13,6 @@
     <header>
         <div class="wrapper">
             <h1>Laravel TODOLIST (Basic)</h1>
-            <p>By: ajinkyacodes</p>
         </div>
     </header>
     <main>

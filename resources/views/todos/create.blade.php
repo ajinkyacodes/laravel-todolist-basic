@@ -3,11 +3,11 @@
 @section('content')
 <div class="row">
     <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
+        <div class="btn pull-left">
             <h2>Create a new task</h2>
         </div>
-        <div class="pull-right">
-            <a class="btn btn-primary mb-3" href="{{ route('todos.index') }}"> Back</a>
+        <div class="btn pull-right">
+            <a class="btn btn-sm btn-secondary mb-3" href="{{ route('todos.index') }}"> Back</a>
         </div>
     </div>
 </div>

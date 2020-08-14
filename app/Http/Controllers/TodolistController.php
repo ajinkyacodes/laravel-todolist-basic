@@ -54,7 +54,7 @@ class TodolistController extends Controller
      */
     public function show(Todo $todo)
     {
-        return view('todos.show',compact('todo'));
+        //
     }
 
     /**
@@ -84,7 +84,7 @@ class TodolistController extends Controller
         $todo->update($request->all());
   
         return redirect()->route('todos.index')
-                        ->with('success','Task updated successfully');
+                        ->with('success','Task updated successfully.');
     }
 
     /**
