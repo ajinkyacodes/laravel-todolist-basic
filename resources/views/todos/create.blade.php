@@ -29,7 +29,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Task:</strong>
-                <input type="text" name="title" class="form-control" placeholder="Title">
+                <input type="text" name="task" class="form-control" placeholder="Task">
             </div>
         </div>        
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

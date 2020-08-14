@@ -14,8 +14,8 @@ class TodolistController extends Controller
      */
     public function index()
     {
-        $todos = Todo::latest()->paginate(5);
-        return view('todos.index', compact('todos'))->with('i',(request()->input('page',1)-1)*5);
+        $todos = Todo::latest()->paginate(10);
+        return view('todos.index', compact('todos'))->with('i',(request()->input('page',1)-1)*10);
     }
 
     /**
@@ -65,7 +65,7 @@ class TodolistController extends Controller
      */
     public function edit(Todo $todo)
     {
-        //
+        return view('todos.edit',compact('todo'));
     }
 
     /**
@@ -77,7 +77,14 @@ class TodolistController extends Controller
      */
     public function update(Request $request, Todo $todo)
     {
-        //
+        $request->validate([
+            'task' => 'required',            
+        ]);
+  
+        $todo->update($request->all());
+  
+        return redirect()->route('todos.index')
+                        ->with('success','Task updated successfully');
     }
 
     /**
@@ -88,6 +95,9 @@ class TodolistController extends Controller
      */
     public function destroy(Todo $todo)
     {
-        //
+        $todo->delete();
+  
+        return redirect()->route('todos.index')
+        ->with('success','Task deleted.');
     }
 }

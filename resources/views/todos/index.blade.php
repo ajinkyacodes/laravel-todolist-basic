@@ -29,7 +29,7 @@
     @foreach ($todos as $todo)
     <tr>
         <td>{{ ++$i }}</td>
-        <td>{{ $todo->title }}</td>        
+        <td>{{ $todo->task }}</td>
         <td>
             <form action="{{ route('todos.destroy',$todo->id) }}" method="POST">
 
