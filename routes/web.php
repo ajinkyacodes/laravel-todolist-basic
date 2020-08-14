@@ -11,4 +11,4 @@
 |
 */
 
-Route::resource('/', 'TodolistController');
+Route::resource('todos', 'TodolistController');
