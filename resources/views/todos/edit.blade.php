@@ -2,12 +2,14 @@
    
 @section('content')
     <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="btn pull-left">
-                <h2>Edit Task</h2>
-            </div>
-            <div class="btn pull-right">
+        <div class="col-lg-12">
+            <div>
                 <a class="btn btn-sm btn-secondary mb-3" href="{{ route('todos.index') }}"> Back</a>
+            </div>
+        </div>
+        <div class="col-lg-12 margin-tb">
+            <div>
+                <h2>Edit Task</h2>
             </div>
         </div>
     </div>
@@ -30,7 +32,7 @@
          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Task:</strong>
+                    <p class="mb-2"><strong>Task</strong></p>
                     <input type="text" name="task" value="{{ $todo->task }}" class="form-control" placeholder="Task">
                 </div>
             </div>            

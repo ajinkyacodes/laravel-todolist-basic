@@ -4,11 +4,11 @@
 
 <div class="row">
     <div class="col-lg-12 margin-tb">
-        <div class="btn pull-left">
+        <div class="btn pull-left pl-0">
             <h2>Todo List</h2>
         </div>
         <div class="btn pull-right">
-            <a class="btn btn-sm btn-success mb-3" href="{{ route('todos.create') }}"> Create a new task</a>
+            <a class="btn btn-sm btn-success mb-2" href="{{ route('todos.create') }}"> Create a new task</a>
         </div>
     </div>
 </div>

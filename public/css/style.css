@@ -10,8 +10,10 @@ header {
     text-align: center;
 }
 
+main { margin-bottom: 50px; }
+
 footer {
-    padding: 10px 0;
+    padding: 100px 0;
     background-color: #000;
 }
 
