@@ -24,7 +24,7 @@
     </main>
     <footer>
         <div class="wrapper">
-            <p>&copy;ajinkyacodes</p>            
+            <p>&copy; ajinkyacodes</p>            
         </div>
     </footer>
 </body>
