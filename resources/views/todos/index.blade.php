@@ -8,7 +8,7 @@
             <h2>Todo List</h2>
         </div>
         <div class="btn pull-right  pl-0">
-            <a class="btn btn-sm btn-success mb-2" href="{{ route('todos.create') }}"> Create a new task</a>
+            <a class="btn btn-sm btn-info mb-2" href="{{ route('todos.create') }}"> Create a new task</a>
         </div>
     </div>
 </div>
