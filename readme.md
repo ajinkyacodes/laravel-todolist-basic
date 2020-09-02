@@ -1,4 +1,4 @@
-# Laravel TODOLIST
+# Laravel TODOLIST (Basic)
 
 This project is built using PHP Laravel Framework. It is a basic TODOLIST App. Users can benefit different features such as:
 
